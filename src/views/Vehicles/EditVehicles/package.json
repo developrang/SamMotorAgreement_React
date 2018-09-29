@@ -1,0 +1,6 @@
+{
+  "name": "EditVehicles",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./EditVehicles.js"
+}

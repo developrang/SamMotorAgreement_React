@@ -1,0 +1,6 @@
+{
+  "name": "EditAgreements",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./EditAgreements.js"
+}

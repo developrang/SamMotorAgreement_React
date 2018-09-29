@@ -1,0 +1,6 @@
+{
+  "name": "EditVendors",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./EditVendors.js"
+}

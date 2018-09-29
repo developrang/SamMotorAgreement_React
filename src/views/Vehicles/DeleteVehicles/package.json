@@ -1,0 +1,6 @@
+{
+  "name": "DeleteVehicles",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./DeleteVehicles.js"
+}

@@ -11,6 +11,96 @@ export default {
     },
     {
       title: true,
+      name: 'App',
+      wrapper: {            // optional wrapper object
+        element: '',        // required valid HTML5 element tag
+        attributes: {}        // optional valid JS object with JS API naming ex: { className: "my-class", style: { fontFamily: "Verdana" }, id: "my-id"}
+      },
+      class: ''             // optional class names space delimited list for title item ex: "text-center"
+    },
+    {
+      name: 'Agreements',
+      url: '/agreements',
+      icon: 'icon-layers',
+      children: [
+        {
+          name: 'Agreements',
+          url: '/agreements',
+          icon: 'icon-layers',
+        },
+        {
+          name: 'Add Agreement',
+          url: '/agreements/new',
+          icon: 'icon-layers',
+        },
+        {
+          name: 'Edit Agreement',
+          url: '/agreements/edit',
+          icon: 'icon-layers',
+        },
+        {
+          name: 'Delete Agreement',
+          url: '/agreements/delete',
+          icon: 'icon-layers',
+        },        
+      ],
+    },  
+    {
+      name: 'Vendors',
+      url: '/vendors',
+      icon: 'icon-people',
+      children: [
+        {
+          name: 'Vendors',
+          url: '/vendors',
+          icon: 'icon-people',
+        },
+        {
+          name: 'Add Vendor',
+          url: '/vendors/new',
+          icon: 'icon-people',
+        },
+        {
+          name: 'Edit Vendor',
+          url: '/vendors/edit',
+          icon: 'icon-people',
+        },
+        {
+          name: 'Delete Vendor',
+          url: '/vendors/delete',
+          icon: 'icon-people',
+        },        
+      ],
+    },    
+    {
+      name: 'Vehicles',
+      url: '/vehicles',
+      icon: 'icon-plane',
+      children: [
+        {
+          name: 'Vehicles',
+          url: '/vehicles',
+          icon: 'icon-plane',
+        },
+        {
+          name: 'Add Vehicle',
+          url: '/vehicles/new',
+          icon: 'icon-plane',
+        },
+        {
+          name: 'Edit Vehicle',
+          url: '/vehicles/edit',
+          icon: 'icon-plane',
+        },
+        {
+          name: 'Delete Vehicle',
+          url: '/vehicles/delete',
+          icon: 'icon-plane',
+        },        
+      ],
+    },
+    {
+      title: true,
       name: 'Theme',
       wrapper: {            // optional wrapper object
         element: '',        // required valid HTML5 element tag

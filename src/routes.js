@@ -167,6 +167,66 @@ const Typography = Loadable({
   loading: Loading,
 });
 
+const Agreements = Loadable({
+  loader: () => import('./views/Agreements/Agreements'),
+  loading: Loading,
+});
+
+const AddAgreements = Loadable({
+  loader: () => import('./views/Agreements/AddAgreements'),
+  loading: Loading,
+});
+
+const EditAgreements = Loadable({
+  loader: () => import('./views/Agreements/EditAgreements'),
+  loading: Loading,
+});
+
+const DeleteAgreements = Loadable({
+  loader: () => import('./views/Agreements/DeleteAgreements'),
+  loading: Loading,
+});
+
+const Vendors = Loadable({
+  loader: () => import('./views/Vendors/Vendors'),
+  loading: Loading,
+});
+
+const AddVendors = Loadable({
+  loader: () => import('./views/Vendors/AddVendors'),
+  loading: Loading,
+});
+
+const EditVendors = Loadable({
+  loader: () => import('./views/Vendors/EditVendors'),
+  loading: Loading,
+});
+
+const DeleteVendors = Loadable({
+  loader: () => import('./views/Vendors/DeleteVendors'),
+  loading: Loading,
+});
+
+const Vehicles = Loadable({
+  loader: () => import('./views/Vehicles/Vehicles'),
+  loading: Loading,
+});
+
+const AddVehicles = Loadable({
+  loader: () => import('./views/Vehicles/AddVehicles'),
+  loading: Loading,
+});
+
+const EditVehicles = Loadable({
+  loader: () => import('./views/Vehicles/EditVehicles'),
+  loading: Loading,
+});
+
+const DeleteVehicles = Loadable({
+  loader: () => import('./views/Vehicles/DeleteVehicles'),
+  loading: Loading,
+});
+
 const Widgets = Loadable({
   loader: () => import('./views/Widgets/Widgets'),
   loading: Loading,
@@ -188,6 +248,21 @@ const User = Loadable({
 const routes = [
   { path: '/', exact: true, name: 'Home', component: DefaultLayout },
   { path: '/dashboard', name: 'Dashboard', component: Dashboard },
+  { path: '/vehicles', exact: true, name: 'Vehicles', component: Vehicles },
+  { path: '/vehicles/vehicles', name: 'Vehicles', component: Vehicles },
+  { path: '/vehicles/new', name: 'Add Vehicle', component: AddVehicles },
+  { path: '/vehicles/edit', name: 'Edit Vehicle', component: EditVehicles },
+  { path: '/vehicles/delete', name: 'Delete Vehicle', component: DeleteVehicles },
+  { path: '/vendors', exact: true, name: 'Vendors', component: Vendors },
+  { path: '/vendors/vendors', name: 'Vendors', component: Vendors },
+  { path: '/vendors/new', name: 'Add Vendor', component: AddVendors },
+  { path: '/vendors/edit', name: 'Edit Vendor', component: EditVendors },
+  { path: '/vendors/delete', name: 'Delete Vendor', component: DeleteVendors },
+  { path: '/agreements', exact: true, name: 'Agreements', component: Agreements },
+  { path: '/agreements/agreements', name: 'Agreements', component: Agreements },
+  { path: '/agreements/new', name: 'Add Agreements', component: AddAgreements },
+  { path: '/agreements/edit', name: 'Edit Agreements', component: EditAgreements },
+  { path: '/agreements/delete', name: 'Delete Agreements', component: DeleteAgreements },
   { path: '/theme', exact: true, name: 'Theme', component: Colors },
   { path: '/theme/colors', name: 'Colors', component: Colors },
   { path: '/theme/typography', name: 'Typography', component: Typography },
